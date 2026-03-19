@@ -1,0 +1,114 @@
+<!-- ===================== index.html (HOME PAGE) ===================== -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title><M-KOPA Ghana</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<script>
+const questions = document.querySelectorAll(".faq-question");
+
+questions.forEach(q => {
+  q.addEventListener("click", () => {
+    const answer = q.nextElementSibling;
+    answer.style.display = answer.style.display === "block" ? "none" : "block";
+  });
+});
+</script>
+<a href="https://wa.me/233242590695" class="whatsapp" target="_blank">
+  💬
+</a>
+<script>
+const elements = document.querySelectorAll(".fade-in");
+
+window.addEventListener("scroll", () => {
+  elements.forEach(el => {
+    const position = el.getBoundingClientRect().top;
+    const screenHeight = window.innerHeight;
+
+    if (position < screenHeight - 100) {
+      el.classList.add("show");
+    }
+  });
+});
+</script>
+<body>
+<header>
+  <h2>M-KOPA Ghana</h2>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="how-it-works.html">How It Works</a>
+    <a href="products.html">Products</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Get a Smartphone Today. Pay Small Small.</h1>
+  <p>Flexible daily or weekly payments.</p>
+  <a href="products.html" class="btn">Apply Now</a>
+</section>
+
+<section>
+  <h2>How It Works</h2>
+  <div class="grid">
+    <div>Deposit</div>
+    <div>Pay</div>
+    <div>Own</div>
+    <div>Upgrade</div>
+  </div>
+</section>
+
+<section>
+  <h2>Featured Products</h2>
+  <a href="products.html">View Phones</a>
+</section>
+
+
+
+<section class="testimonials">
+  <h2>What Our Customers Say</h2>
+  <div class="grid">
+    <div class="testimonial-card">
+      <p>"I got my phone with just a small deposit. Very easy!"</p>
+      <h4>- Kwame, Accra</h4>
+    </div>
+    <div class="testimonial-card">
+      <p>"The daily payment plan works perfectly for me."</p>
+      <h4>- Ama, Kumasi</h4>
+    </div>
+    <div class="testimonial-card">
+      <p>"Now I can work online thanks to my new smartphone."</p>
+      <h4>- Kojo, Cape Coast</h4>
+    </div>
+  </div>
+</section>
+<section class="fade-in"></section>
+
+<section class="faq">
+  <h2>Frequently Asked Questions</h2>
+
+  <div class="faq-item">
+    <button class="faq-question">How do I qualify?</button>
+    <div class="faq-answer">You only need a valid ID and small deposit.</div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Can I pay weekly?</button>
+    <div class="faq-answer">Yes, you can pay daily or weekly.</div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">What happens if I miss payment?</button>
+    <div class="faq-answer">We provide flexible options to help you stay on track.</div>
+  </div>
+
+</section>
+<footer>
+  <p>© 2026 SmartPay Ghana</p>
+</footer>
+</body>
+</html>
